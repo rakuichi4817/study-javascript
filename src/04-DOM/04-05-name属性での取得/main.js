@@ -1,0 +1,11 @@
+"use strict";
+
+let btn = document.getElementById("triggerButton");
+btn.addEventListener("click", function(e){
+    let elements = document.getElementsByName("inputText");
+    console.log(elements);
+
+    for(let element of elements){
+        console.log(element.value);
+    }
+}, false)
